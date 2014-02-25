@@ -11,13 +11,13 @@ function dot {
 
 function dash {
 	xset led 3
-	sleep "$(echo "3*$unit" | bc)"
+	sleep $((unit*3))
 	xset -led 3
 	sleep $unit
 }
 
 function gap {
-	sleep "$(echo "2*$unit" | bc)"
+	sleep $((unit*2))
 }
 
 function pause {
